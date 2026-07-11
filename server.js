@@ -33,6 +33,12 @@ dotenv.config();
 // This app object handles all HTTP requests and responses
 const app = express();
 
+// ROOT ROUTE
+app.get("/",(req,res) => {
+  res.send("API Running Successfully");
+});
+
+
 // --------------------------------------------------
 // GLOBAL MIDDLEWARE
 // --------------------------------------------------
