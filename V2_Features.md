@@ -1,4 +1,5 @@
-<ol>Authentication Features
+<h2>Authentication Features</h2>
+<ol>
   <li>Forgot Paasword</li>
   <li>Reset Password</li>
   <li>Email Verification</li>
