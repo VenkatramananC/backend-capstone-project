@@ -1,5 +1,6 @@
 <h2>Authentication Features</h2>
-<ol><pre>
+<pre>
+<ol>
   <li>Forgot Paasword</li>
   <li>Reset Password</li>
   <li>Email Verification</li>
@@ -8,8 +9,8 @@
   <li>Remember Me</li>
   <li>Login with Google(OAuth)</li>
   <li>Multi-Factor Authentication(MFA)</li>
-  </pre>
 </ol>
+</pre>
 <br>
 <hr>
 <br>
