@@ -99,14 +99,14 @@ exports.updateBook = async (req, res) => {
     const { title, author, year } = req.body;
     const updateData = {};
 
-    if (title !== undefined) updateData.title = title.trim();
-    if (author !== undefined) updateData.author = author.trim();
+    if (typeof title === "string") updateData.title = title.trim();
+    if (typeof author === "string") updateData.author = author.trim();
     if (year !== undefined) updateData.year = year;
 
     if (Object.keys(updateData).length === 0) {
       return res.status(400).json({
         success: false,
-        message: "At least one field is required for update"
+        message: "At least one valid field is required for update"
       });
     }
 
@@ -136,7 +136,6 @@ exports.updateBook = async (req, res) => {
     });
   }
 };
-
 // DELETE BOOK
 exports.deleteBook = async (req, res) => {
   try {
